@@ -3,6 +3,8 @@
 import postcss from 'postcss';
 import parser, {unit} from 'postcss-value-parser';
 
+// border: <line-width> || <line-style> || <color>
+// outline: <outline-color> || <outline-style> || <outline-width>
 const borderProps = [
     'border',
     'border-top',
@@ -20,7 +22,7 @@ const borderWidths = [
 
 const borderStyles = [
     'none',
-    'auto',
+    'auto', // only in outline-style
     'hidden',
     'dotted',
     'dashed',
