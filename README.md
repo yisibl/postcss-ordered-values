@@ -23,7 +23,7 @@ modules to understand which declarations are duplicates.
 h1 {
     border: solid 1px red;
     border: red solid .5em;
-    border: rgba(0, 30, 105, 0,8) solid 1px;
+    border: rgba(0, 30, 105, 0.8) solid 1px;
     border: 1px solid red;
 }
 ```
@@ -34,7 +34,7 @@ h1 {
 h1 {
     border: 1px solid red;
     border: .5em solid red;
-    border: 1px solid rgba(0, 30, 105, 0,8);
+    border: 1px solid rgba(0, 30, 105, 0.8);
     border: 1px solid red;
 }
 ```
