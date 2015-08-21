@@ -33,6 +33,14 @@ let tests = [{
     message: 'should handle -webkit-focus-ring & auto',
     fixture: 'h1{outline:-webkit-focus-ring-color 5px auto}',
     expected: 'h1{outline:5px auto -webkit-focus-ring-color}'
+}, {
+    message: 'should order flex-flow',
+    fixture: 'h1{flex-flow: wrap column}',
+    expected: 'h1{flex-flow: column wrap}'
+}, {
+    message: 'should order flex-flow',
+    fixture: 'h1{flex-flow: row-reverse wrap-reverse}',
+    expected: 'h1{flex-flow: row-reverse wrap-reverse}'
 }];
 
 function process (css, options) {
